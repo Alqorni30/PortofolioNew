@@ -22,7 +22,7 @@
 </head>
 <body>
     <!-- header navbar -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 md:w-full">
         <div class="container">
             <div class="flex items-center justifty-between relative">
                 <div class="px-4">
@@ -73,10 +73,10 @@
     </header>
     <!-- end header navbar -->
     <!-- hero section -->
-    <section id="home" class="pt-28 lg:pt-5 dark:bg-dark">
+    <section id="home" class="pt-28 lg:pt-28 lg:pt-5 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 lg:w-1/2">
+                <div class="w-full self-center px-4 mt-8 lg:w-1/2">
                     <h1 class="text-base font-semibold text-primary dark:text-white md:text-xl">Hai Welcome, Saya <span class="block font-bold text-slate-900 text-4xl mt-1 dark:text-white">Hervinsa Alqorni</span></h1>
                     <h2 class="font-medium text-slate-400 text-lg mb-5 lg:text-2xl">I am Web Developer</h2>
                     <p class="font-medium text-slate-400 mb-10 leading-relaxed">Mendedikasikan Dalam pengembangan <span class="font-bold text-dark dark:text-white">Web Development!</span></p>
@@ -84,13 +84,8 @@
                     <a href="https://wa.me/+6285841876273?text=Haii%20Vinn%20Bolehkah%20Saya%20bertanya!" target="_blank" class="text-base font-semibold text-white bg-indigo-500 rounded-lg py-3 px-8 hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="mt-5 relative lg:mt-7 lg:right-0">
-                        <img src="img/IMG_20220913_174419-removebg-preview.png" width="400" class="max-w-full mx-auto relative z-10" alt="hervinsa">
-                        <span class="absolute bottom-0  left-1/2 -translate-x-1/2 md:scale-125">
-                            <svg widht="500" height="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#6366f1" d="M50.5,-17.7C59.2,10.4,55.7,41.1,36.1,57.1C16.4,73.2,-19.3,74.5,-42.5,57.8C-65.6,41.1,-76.1,6.5,-67,-22.2C-57.8,-50.8,-28.9,-73.5,-4,-72.2C20.9,-70.9,41.8,-45.7,50.5,-17.7Z" transform="translate(100 100)" />
-                              </svg>
-                        </span>
+                    <div class="mt-10 relative lg:mt-7 lg:right-0">
+                        <img src="img/IMG_20220913_174419-removebg-preview.png" width="300" class="max-w-full mx-auto relative z-10 bg-primary rounded-full" alt="hervinsa">
                     </div>
                 </div>
             </div>
@@ -272,22 +267,23 @@
                     <p class="font-medium text-md text-slate-500 md:text-lg dark:text-slate-400">Jika anda mau memberi pesan, nasehat, dan motivasi kepada saya bisa isi pesan dibawah ini!</p>
                 </div>
             </div>
-            <form action="">
+            <form action="https://formspree.io/f/myyqyzyq"
+            method="POST">
                 <div class="w-full lg:w-2/3 lg:mx-auto">
                     <div class="w-full px-4 mb-8">
                         <label for="name" class="text-base text-primary font-bold">Nama</label>
-                        <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                        <input type="text" name="Nama" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                     </div>
                     <div class="w-full px-4 mb-8">
                         <label for="email" class="text-base text-primary font-bold">Email</label>
-                        <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                        <input type="email" id="email" name="Email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                     </div>
                     <div class="w-full px-4 mb-8">
                         <label for="massage" class="text-base text-primary font-bold">Pesan</label>
-                        <textarea type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                        <textarea type="text" id="message" name="Pesan" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
                     </div>
                     <div class="w-full px-4">
-                        <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                        <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
                     </div>
                 </div>
             </form>
